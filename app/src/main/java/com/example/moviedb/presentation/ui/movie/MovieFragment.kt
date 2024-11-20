@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.example.moviedb.databinding.FragmentMovieBinding
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class MovieFragment : Fragment() {
 

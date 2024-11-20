@@ -1,6 +1,5 @@
 package com.example.moviedb.presentation.ui.movie
 
-
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -26,7 +25,8 @@ class MovieViewModel @Inject constructor(
     private val repository: MovieDetailsRepository
 ) : ViewModel() {
 
-    private val query = MutableLiveData<String>("")
+    // Начальный запрос по умолчанию
+    private val query = MutableLiveData<String>("robot")
 
     val list = query.switchMap {
         Pager(
